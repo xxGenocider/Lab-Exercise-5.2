@@ -6,17 +6,105 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <link rel="stylesheet" href="stylesheets/home-stylesheet.css">
-    <link rel="icon" type="image/x-icon" href="resources/upmin-logo.png">
+  
+    <style>
+        body {
+            background-image: url('upmin-5.jpg');
+        }
+        .header {
+            background-color: white;
+            width: 90%;
+            padding-bottom: 25px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 4px;
+        }
+        #menu {
+            width: 90%;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #850038;
+        }
+        #menu a{
+            text-align: center;
+            text-decoration: none;
+            color: white;
+        }
+        #menu .au {
+            color: #ffad0d;
+            border: none;
+        }
+        #menu a:hover {
+            color: #ffad0d;
+            border: none;
+        }
+        #menu .sub li a{
+            font-size: medium;
+            text-align: left;
+            display: block;
+            color: #850038;
+            background-color: white;
+            border: none;
+        }
+        #menu .sub li a:hover{
+            color: #ffad0d;
+            border: none;
+        }
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+        }
+        .container {
+            width: 90%;
+            margin: 90px auto;
+            background-color: white;
+        }
+        #humss{
+            margin: 25px;
+        }
+        .ui-widget-header {
+            background: none;
+            border: none;
+        }
+        #tabs {
+            border: none;
+        }
+        .ui-tabs .ui-tabs-panel {
+            border: 5px solid #850038;
+            border-radius: 0px;
+            padding: 5% 10%;
+        }
+        .ui-state-default, .ui-widget-content .ui-state-default,
+        .ui-widget-header .ui-state-default, .ui-button,
+        html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+            background: #0e6021;
+            border: none;
+        }
+        .ui-state-active, .ui-widget-content .ui-state-active,
+        .ui-widget-header .ui-state-active, a.ui-button:active, 
+        .ui-button:active, .ui-button.ui-state-active:hover {
+            background: #850038;
+        }
+        .ui-state-default a, .ui-state-default a:link,
+        .ui-state-default a:visited, a.ui-button,
+        a:link.ui-button, a:visited.ui-button, .ui-button {
+            color: white;
+        }
+    </style>
 </head>
 <body>
 <div class="header">
-    <img src="resources/upmin-header.png" alt="University of the Philippines Mindanao">
+    <img src="upmin-header.png" alt="University of the Philippines Mindanao">
     <!--MENU WIDGET FOR MENU-->
     <div class="menu">
         <ul id="menu">
             <li><a class="home" href="home.html">HOME</a></li>
-            <li><a class="au active" href="#">ACADEMIC UNITS</a>
+            <li><a class="au" href="academic unit.html">ACADEMIC UNITS</a>
                 <ul class="sub">
                     <li><a href="humss.html">Humanities & Social Sciences</a></li>
                     <li><a href="scimath.html">Science & Mathematics</a></li>
@@ -24,14 +112,14 @@
                 </ul>
             </li>
             <!--SELECT MENU WIDGET FOR ACADEMIC UNITS-->
-            <li><a class="ap" href="academic-programs.html">ACADEMIC PROGRAMS</a></li>
-            <li><a class="log" href="sign-up.html">LOG-IN</a></li>
+            <li><a class="ap" href="#">ACADEMIC PROGRAMS</a></li>
+            <li><a class="log" href="#">LOG-IN</a></li>
         </ul>
     </div>
 </div>
 <!--TAB WIDGET FOR HOME-->
 <div class="container">
-    <div id="course">
+    <div id="humss">
         <br>
         <h2>SCIENCE & MATHEMATICS</h2>
         <h2>BS APPLIED MATHEMATICS</h2>
@@ -64,7 +152,7 @@
             <br>
             ■ Mathematical Statistician
             <br><br>
-            <li><a href="resources/BS_Applied_Mathematics.pdf">BS_Applied_Mathematics.pdf</a></li>
+            <li><a href="BS_Applied_Mathematics.pdf">BS_Applied_Mathematics.pdf</a></li>
             <br><br>
             MATHEMATICS SUBJECTS
             <br>
@@ -179,7 +267,29 @@
         </p>
     </div>
 </div>
+<script>
+    /* Tabs Widget for HOME */
+    $(function(){
+        $("#tabs").tabs();
+    });
 
-<script src="js/script2.js"></script>
+    /* Menu Widget for MENU */
+    $("#menu").menu();
+</script>
+<script>
+    $(function(){
+        $(".menu li").hover(
+            function(){
+                //$('ul.sub', this).slideDown(500);
+                //$('>ul.sub', this).slideDown(500);
+                $('>ul.sub:not(:animated)', this).slideDown(500);
+            },
+            function(){
+                //$('ul.sub',this).slideUp(300);
+                $('>ul.sub',this).slideUp(300);
+            }
+        );
+    });
+</script>
 </body>
 </html>

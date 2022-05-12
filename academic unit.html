@@ -33,7 +33,7 @@
             text-decoration: none;
             color: white;
         }
-        #menu .home {
+        #menu .au {
             color: #ffad0d;
             border: none;
         }
@@ -431,13 +431,17 @@
     $("#menu").menu();
 </script>
 <script>
+    $("#selectmenu").selectmenu();
     $(function(){
         $(".menu li").hover(
             function(){
-                $('>ul.sub:not(:animated)', this).slideDown(100);
+                //$('ul.sub', this).slideDown(500);
+                //$('>ul.sub', this).slideDown(500);
+                $('>ul.sub:not(:animated)', this).slideDown(500);
             },
             function(){
-                $('>ul.sub',this).slideUp(100);
+                //$('ul.sub',this).slideUp(300);
+                $('>ul.sub',this).slideUp(300);
             }
         );
     });
