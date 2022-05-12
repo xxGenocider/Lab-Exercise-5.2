@@ -8,7 +8,7 @@ body {
 }
 .header {
   background-color: white;
-  width: 90%;
+  /* width: 90%; */
   padding-bottom: 25px;
   margin-left: auto;
   margin-right: auto;
