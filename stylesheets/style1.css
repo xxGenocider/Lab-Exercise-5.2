@@ -125,3 +125,30 @@ table {
     padding: 16px;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .title {
+    font-size: .75em;
+  }
+  
+  .panels {
+    font-size: .5em;
+  }
+
+  .program-title {
+    font-size: 1em;
+    align-items: center;
+    text-align: center;
+  }
+
+  .content-title-h4 {
+    font-size: 1.25em;
+    font-weight: bold;
+  }
+
+  .content-title-h3 {
+    font-size: 1em;
+    font-weight: bold;
+  }
+
+}
