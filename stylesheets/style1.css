@@ -6,7 +6,7 @@ body {
   height: 98vh;
 }
 
-.header {
+.header1{
   background-color: white;
   width: 90%;
   padding-bottom: 25px;
@@ -55,8 +55,6 @@ img {
   border: none;
 }
 .container-fluid {
-  /* width: 90%; */
-  margin: 100px auto;
   background-color: #ffffff;
   padding: 24px 0;
 }
@@ -108,7 +106,6 @@ a:link.ui-button, a:visited.ui-button, .ui-button {
 
 .content {
   margin-bottom: 24px;
-
 }
 
 i {
