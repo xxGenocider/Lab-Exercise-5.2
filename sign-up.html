@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  <link rel="stylesheet" href="stylesheets/style.css"> 
+  <link rel="icon" type="image/x-icon" href="resources/upmin-logo.png">
+</head>
+<body>
+  <div class="container">
+
+    <div class="left-side"> 
+      <img src="resources/Unibersidad_ng_Pilipinas_Mindanao.png" alt="UP Min Logo"> 
+    </div>
+
+    <div class="right-side">
+      <form onsubmit="saveFile()"> 
+         <h1 class="title">SIGN UP</h1>
+
+         <div class="row row1">
+           <div class="pair">
+             <label for="fname">First Name</label>  <br>
+             <input type="text" id="fname" autocomplete="off" required> 
+           </div>
+   
+           <div class="pair">
+             <label for="mname">Middle Name</label> <br>
+             <input type="text" id="mname" autocomplete="off" required> 
+           </div>
+   
+           <div class="pair">
+             <label for="lname">Last Name</label> <br>
+             <input type="text" id="lname" autocomplete="off" required> 
+           </div>
+   
+           <div class="pair">
+             <label for="suffix">Suffix</label> <br>
+             <input type="text" id="suffix" autocomplete="off"> 
+           </div>
+          </div>
+
+          <div class="row row2">
+            <div class="pair">
+              <label for="">Gender</label> <br>
+              <div class="radio-btn">
+                <div class="choices">
+                  <input type="radio" id="male" value="male" name="gender"> 
+                  <label for="male">Male</label>
+                </div>
+                <div class="choices">
+                  <input type="radio" id="female" value="male" name="gender">
+                  <label for="female">Female</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="pair">
+              <label for="dob">Date of Birth</label> <br>
+              <input type="text" id="dob" autocomplete="off" required> 
+            </div>
+
+            <div class="pair">
+              <label for="yrLevel" class="label">Year Level</label> <br>
+              <input type="text" id="yrLevel" autocomplete="off" required> 
+            </div>
+          </div>
+
+          <div class="row row3">
+            <div class="pair">
+              <label for="province">Province</label> <br>
+              <input type="text" id="province" required>
+            </div>
+          </div>
+
+          <input type="submit" value="submit" class="btn">
+      </form>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

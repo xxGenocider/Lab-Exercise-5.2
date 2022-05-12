@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Playfair Display', serif;
+}
+
+
+body {
+  height: 100%;
+  background-color: #f5f5f5;
+}
+
+.container {
+  min-width: 1200px;
+  min-height: 600px;
+  border: 1px solid black;
+  border-radius: 20px;
+
+  display: flex;
+  padding: 0;
+  position: absolute;  
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.left-side {
+  box-sizing: border-box;
+  position: relative;
+  width: 30%;
+  height: 600px;
+
+  border-radius: 20px 0 0 20px;
+  background-color: #800000;
+}
+
+.left-side img {
+  width: 300px;
+  height: 200px;
+
+  display: block;
+  margin: auto;
+  margin-top: 50%;
+}
+
+.right-side {
+
+  position: relative;
+  width: 70%;
+  height: 600px;
+  padding: 32px 32px;
+
+  border-radius: 0 20px 20px 0;
+  background-color: #ffffff;
+}
+
+input {
+  height: 40px;
+  width: 95%;
+  padding: 8px;
+  margin-top: 12px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+label {
+  font-size: 1.25rem;
+  color: #5a5a5a;
+}
+
+.title {
+  font-size: 54px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.row {
+  margin-top: 24px;
+  margin-bottom: 54px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.row1 > .pair:last-child > input {
+  width: 60%;
+}
+
+.row2 {
+  justify-content: start;
+  gap: 24px;
+}
+
+
+.row3 > .pair {
+  width: 95%;
+}
+
+.btn {
+  display: block;
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+
+  border-radius: 20px;
+  text-align: center;
+  background-color: #25340F;
+  color: white;
+  font-size: 1.25em;
+}
+
+.row2 > .pair:first-child{
+  width: 30%;
+}
+
+input {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 90%;
+}
+
+input[type="radio"] {
+  margin: -1px;
+  vertical-align: middle;
+}
+
+.radio-btn {
+  display: flex;
+  justify-content: center;
+  padding: 12px 0;
+}
+
+.radio-btn input {
+  width: 20px;
+  height: 20px;
+}
+
+.radio-btn label {
+  font-size: 1rem;  
+  color: #25340F;
+}
+
+.radio-btn .choices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  width: 50%;
+}
+
+.ui-button {
+  border: none;
+  background: none;
+  font-family: 'Playfair Display', serif;
+}
+
+.ui-button:hover {
+  background-color: #aaa;
+  color: white;
+}
+
+.ui-state-active {
+  border: 1px solid #25340F;
+  background: none;
+}
+
+.ui-button.ui-state-active:hover {
+  background: none;
+  color: black;
+}
+
+.ui-visual-focus {
+  box-shadow: none;
+}
+
+.ui-widget-content {
+  border: 1px solid #25340F;
+  background: #fff;
+  color: #25340F;
+}
+
+.ui-spinner-input {
+  box-sizing: border-box;
+  border: none;
+  background: none;
+  font-family: 'Playfair Display', serif;
+  height: 40px;
+  margin: 0;
+  padding-left: 8px;
+  width: 50%;
+}
+
+.ui-spinner .ui-corner-all .ui-widget .ui-widget-content {
+  width: 85%;
+}
+
+.ui-spinner-input:focus {
+  outline: none;
+}
+
+.ui-spinner-up, .ui-spinner-down {
+  height: 20px;
+}
+
+.ui-spinner {
+  margin: 12px 0;
+}
+
+.hasDatepicker {
+  font-family: Arial, Helvetica, sans-serif;
+}
