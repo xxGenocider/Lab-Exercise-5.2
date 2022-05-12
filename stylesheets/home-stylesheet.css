@@ -2,10 +2,11 @@ body {
   box-sizing: border-box;
  /* background-image: url('../resources/upmin-5.jpg'); 
   background-size: cover; */
-  width: 98vw;
+  /* width: 98vw; */
   height: 98vh;
   position: absolute;
 }
+
 .header {
   background-color: white;
   width: 100%;
