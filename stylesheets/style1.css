@@ -1,63 +1,32 @@
 body {
   box-sizing: border-box;
-  background-image: url('../resources/upmin-5.jpg');
-  background-size: cover;
-  width: 98vw;
+ /* background-image: url('../resources/upmin-5.jpg'); 
+  background-size: cover; */
+  /* width: 98vw; */
   height: 98vh;
+  /* position: absolute; */
 }
 
-.header1{
+.header {
   background-color: white;
-  width: 90%;
-  padding-bottom: 25px;
+  width: 100%;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 4px;
+  border-radius: 0px;
 }
-#menu {
-  width: 90%;
-  display: flex;
-  justify-content: space-around;
-  padding: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #850038;
-}
-#menu a{
-  text-align: center;
-  text-decoration: none;
-  color: white;
-}
-#menu .ap {
-  color: #ffad0d;
-  border: none;
-}
-#menu a:hover {
-  color: #ffad0d;
-  border: none;
-}
+
 img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 70%;
+  width: 50%;
 }
-#menu .sub li a:hover{
-  color: #ffad0d;
-  border: none;
-}
-#menu .sub li a{
-  font-size: medium;
-  text-align: left;
-  display: block;
-  color: #850038;
-  background-color: white;
-  border: none;
-}
+
 .container-fluid {
-  background-color: #ffffff;
-  padding: 24px 0;
+  border-radius: 20px;
 }
+
 .ui-widget-header {
   background: none;
   border: none;
